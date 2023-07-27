@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -14,29 +14,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4o0-12-kRf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4o0-12-kRf">
+                                <rect key="frame" x="0.0" y="-41" width="430" height="1014"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="n9P-TR-5g2">
-                                <rect key="frame" x="87" y="156" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="n9P-TR-5g2">
+                                <rect key="frame" x="87" y="167" width="256" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="oqT-em-jEQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="oqT-em-jEQ">
                                 <rect key="frame" x="60" y="420" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="0s5-QL-9HM"/>
+                                    <constraint firstAttribute="height" constant="120" id="NPR-VP-J5l"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="R7f-Sg-dgZ">
-                                <rect key="frame" x="234" y="420" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="R7f-Sg-dgZ">
+                                <rect key="frame" x="234" y="420" width="136" height="120"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFG-k4-Sd9">
-                                <rect key="frame" x="147" y="680" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFG-k4-Sd9">
+                                <rect key="frame" x="147" y="716" width="136" height="60"/>
                                 <color key="backgroundColor" red="0.60893791909999995" green="0.10949096830000001" blue="0.1221970096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DaI-YE-JXf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Roll">
@@ -49,6 +51,24 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oqT-em-jEQ" firstAttribute="bottom" secondItem="R7f-Sg-dgZ" secondAttribute="bottom" id="2Bb-ke-zTb"/>
+                            <constraint firstItem="n9P-TR-5g2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="4sU-Kf-2i8"/>
+                            <constraint firstItem="4o0-12-kRf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-100" id="514-VN-9pZ"/>
+                            <constraint firstItem="oqT-em-jEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="54g-hu-RrV"/>
+                            <constraint firstItem="n9P-TR-5g2" firstAttribute="centerX" secondItem="KFG-k4-Sd9" secondAttribute="centerX" id="6Nd-zE-rYa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KFG-k4-Sd9" secondAttribute="bottom" constant="122" id="K4m-nY-xRP"/>
+                            <constraint firstItem="KFG-k4-Sd9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="N11-Dd-TWA"/>
+                            <constraint firstItem="4o0-12-kRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TGS-yM-nUZ"/>
+                            <constraint firstItem="4o0-12-kRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOX-sb-CZu"/>
+                            <constraint firstItem="n9P-TR-5g2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="cmC-0z-NEu"/>
+                            <constraint firstItem="oqT-em-jEQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="420" id="dpJ-AP-Lsz"/>
+                            <constraint firstItem="R7f-Sg-dgZ" firstAttribute="leading" secondItem="oqT-em-jEQ" secondAttribute="trailing" constant="54" id="fqh-ar-0lG"/>
+                            <constraint firstItem="4o0-12-kRf" firstAttribute="centerX" secondItem="n9P-TR-5g2" secondAttribute="centerX" id="g3O-82-2yd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7f-Sg-dgZ" secondAttribute="trailing" constant="60" id="g77-9U-qhm"/>
+                            <constraint firstItem="4o0-12-kRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kRV-XT-N05"/>
+                            <constraint firstItem="oqT-em-jEQ" firstAttribute="top" secondItem="R7f-Sg-dgZ" secondAttribute="top" id="wgf-h9-0ag"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="diceImageView1" destination="oqT-em-jEQ" id="lKe-rn-pkv"/>
@@ -57,13 +77,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="136.74418604651163" y="137.76824034334766"/>
         </scene>
     </scenes>
     <resources>
         <image name="DiceOne" width="100" height="100"/>
         <image name="DiceeLogo" width="196" height="128"/>
-        <image name="GreenBackground" width="444.5" height="414"/>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
